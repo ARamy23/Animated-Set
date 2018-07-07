@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X4t-Gd-YS9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set View Controller-->
+        <scene sceneID="HQh-N1-0Bd">
+            <objects>
+                <viewController id="X4t-Gd-YS9" customClass="SetViewController" customModule="Set__By_Code_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="redraw" id="DFv-eE-fvW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Oq9-b7-bqT">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rv1-HI-khx">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Deal"/>
+                                        <connections>
+                                            <action selector="didTapDeal:" destination="X4t-Gd-YS9" eventType="touchUpInside" id="Ynp-Qi-h3O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4H-HB-oRD">
+                                        <rect key="frame" x="88" y="0.0" width="79.5" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="New Game"/>
+                                        <connections>
+                                            <action selector="didTapNewGame:" destination="X4t-Gd-YS9" eventType="touchUpInside" id="eGQ-Hz-iPt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zD-uN-slW">
+                                        <rect key="frame" x="175.5" y="0.0" width="80" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Hint"/>
+                                        <connections>
+                                            <action selector="didTapHint:" destination="X4t-Gd-YS9" eventType="touchUpInside" id="3m6-n9-K7x"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X7x-2U-q9q">
+                                        <rect key="frame" x="263.5" y="0.0" width="79.5" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Tq5-Y8-ZGP">
+                                <rect key="frame" x="16" y="36" width="343" height="573"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6aZ-BB-nxv" firstAttribute="trailing" secondItem="Oq9-b7-bqT" secondAttribute="trailing" constant="16" id="O2K-MB-bZC"/>
+                            <constraint firstItem="Tq5-Y8-ZGP" firstAttribute="top" secondItem="6aZ-BB-nxv" secondAttribute="top" constant="16" id="Qg4-D8-LQr"/>
+                            <constraint firstItem="6aZ-BB-nxv" firstAttribute="bottom" secondItem="Oq9-b7-bqT" secondAttribute="bottom" constant="20" id="bbH-5i-Hmx"/>
+                            <constraint firstItem="Tq5-Y8-ZGP" firstAttribute="leading" secondItem="6aZ-BB-nxv" secondAttribute="leading" constant="16" id="lVt-Lh-pq6"/>
+                            <constraint firstItem="Oq9-b7-bqT" firstAttribute="leading" secondItem="6aZ-BB-nxv" secondAttribute="leading" constant="16" id="tcf-0I-3jZ"/>
+                            <constraint firstItem="Oq9-b7-bqT" firstAttribute="top" secondItem="Tq5-Y8-ZGP" secondAttribute="bottom" constant="8" symbolic="YES" id="wKr-p8-82N"/>
+                            <constraint firstItem="6aZ-BB-nxv" firstAttribute="trailing" secondItem="Tq5-Y8-ZGP" secondAttribute="trailing" constant="16" id="x25-5n-Rae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6aZ-BB-nxv"/>
+                    </view>
+                    <connections>
+                        <outlet property="boardView" destination="Tq5-Y8-ZGP" id="aYB-s6-1Ah"/>
+                        <outlet property="scoreLbl" destination="X7x-2U-q9q" id="M0e-kX-fL9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ni-Th-ZbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
